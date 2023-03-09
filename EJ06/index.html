@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">FRANK JHOSMEL</a>
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi"onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills"onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum"onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio"onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto"onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenido-img">
+                <img src="img/Sin-título-1.png" alt="">
+            </div>
+            <h1>Frank</h1>
+            <h2>Creador de Paginas Web/HTML-CSS-JS</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/?lang=es"target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.skype.com/es/"target="_blank"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://pe.linkedin.com/"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://es.wikipedia.org/wiki/Fuente_web"target="_blank"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, Mi nombre es Frank Jhosmel Quispe Sequeiros.</span> soy estudiante del instituo KHIPU. actualmente me encuentro en 3er semestre de la carrera Desarrollo de Sistemas de Información.</p>
+        <div class="fila">
+            <!--datos personales-->
+            <div class="col">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li>
+                        <strong>Cumpleaños</strong>
+                        19-09-1999
+                    </li>
+                    <li>
+                        <strong>Telefono</strong>
+                        949366747
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        20221D93@khipu.edu.pe
+                    </li>
+                    <li>
+                        <strong>Sitio Web</strong>
+                        www.facebook.com
+                    </li>
+                    <li>
+                        <strong>Dirección</strong>
+                         Av.Alejandro Velazco
+                    </li>
+                    <li>
+                        <strong>Cargo</strong>
+                        <span>Creador de Paginas Web</span>
+                    </li>
+                </ul>
+            </div>
+            <!--INTERESES-->
+            <div class="col">
+                <h3>Intereses</h3>
+                <div class="contenedor-intereses">
+                    <div class="interes">
+                        <i class="fa-solid fa-gamepad-modern"></i>
+                        <span>JUEGOS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span>MUSICA</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-plane-departure"></i>
+                        <span>VIAJAR</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-brands fa-apple"></i>
+                        <span>MAC OS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-person-hiking"></i>
+                        <span>DEPORTE</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-car"></i>
+                        <span>AUTOS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>FOTOS</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <button>
+            Descargar CV <i class="fa-sharp fa-solid fa-download"></i>
+            <span class="overlay"></span>
+        </button>
+
+        </div>
+    </section>
+
+    <!--SECCION SKILLS-->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!--technical skill-->
+                <div class="col">
+                    <h3>Habilidades tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML Y CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso photoshop">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso wordpress">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupa</span>
+                        <div class="barra-skill">
+                            <div class="progreso drupal">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Profesional sk..-->
+                <div class="col">
+                    <h3>HABILIDADES PROFESIONALES</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>98%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyecto Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso proyect">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Mi CENTRO DE ESTUDIO</h4>
+                        <span class="casa">Instituto Khipu</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Estudio en el Instituto Khipu la carrera de desarrollo de sistemas de Información, trabajo y estudio.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>CURSO VIRTUAL 1</h4>
+                        <span class="casa">ORACLE</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Pagina web, donde otorgan certificado al finalizar con notas aprobatorias un curso.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>CURSO VIRTUAL 2 </h4>
+                        <span class="casa">FREECODECAM</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Diseño web, otorgan tareas y proyectos los cuales al finalizar, te compenzan con un certificado</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>AGENCIA</h4>
+                        <span class="casa">CREATIVE PLEACE</span>
+                        <span class="fecha">2017 - 2019</span>
+                        <p>Agencia de publicidad, donde se crea contenido para los clientes. publicidad para hacer conocer la marca o empresa.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div> 
+                    <div class="item der">
+                        <h4>EMPRESA</h4>
+                        <span class="casa">SUN TIME</span>
+                        <span class="fecha">2019 - 2022</span>
+                        <p>Empresa especializada en el comercio de productos de ropa, gafas y relojs de la marca SUN TIME. Mi funcion era la de crear estrategias de diseño para que sean llamativos ante el publico.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>        
+                    <div class="item der">
+                        <h4>INSTITUTO</h4>
+                        <span class="casa">KHIPU</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Instituto Khipu es donde realizo practicas. como en desarrollo de paginas y diseño grafico.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>                       
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/AUDIFONOSLAPTOP1.JPG" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotograía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/AUDIFONOSLAPTOP2.JPG" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotograía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ROSTRO.JPG" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotograía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/AUTO2.JPG" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotograía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/AUTO3.JPG" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotograía</p>
+                    </div>
+                </div>    
+                <div class="proyecto">
+                    <img src="img/AUTO1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotograía</p>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+
+                <!--formulario-->
+                <div class="col">
+                    <form id="formulario" name="formulario" action="https://formsubmit.co/frankjhoosmel3@gmail.com" method="POST">
+                        <input type="text" id="name"    name="name"   placeholder="Tu Nombre">
+                        <input type="number"id="number" name="number" placeholder="Numero">
+                        <input type="email" id="email"  name="email"  placeholder="Correo">
+                        <input type="text" id="tema"    name="tema"   placeholder="Tema">
+                        <textarea name="mensaj" id="mensaj" cols="30" placeholder="Mensaje"></textarea>
+                        <input type="file" id="archivo" name="archivo">
+    
+                        <button type="submit">
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+            
+
+                <!--Mapa-->
+                <div class="col">
+                    <img src="img/ub.jpg" alt="">
+                    <idv class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Av. Alejandro Velazco 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile"></i>
+                                Contactanos: 949366747
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: 20221D93@khipu.edu.pe
+                            </li>
+                        </ul>
+                    </idv>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=es"target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.skype.com/es/"target="_blank"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://pe.linkedin.com/"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://es.wikipedia.org/wiki/Fuente_web"target="_blank"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="formulario.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+</body>
+</html>
